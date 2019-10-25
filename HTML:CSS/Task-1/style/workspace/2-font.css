@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../../font/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../../font/Lato/Lato-Black.ttf") format("truetype"), url("Lato-Black.woff2") format("woff2"),
+    url("Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("../../font/Old_Standard_TT/OldStandard-Regular.ttf") format("truetype"),
+    url("OldStandard-Regular.woff2") format("woff2"), url("OldStandard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Silhouetto-Script";
+  src: url("../../font/Silhouetto-Script/Silhouetto-Regular.ttf") format("truetype"),
+    url("Silhouetto-Regular.otf") format("opentype"), url("Silhouetto-Regular.woff2") format("woff2"),
+    url("Silhouetto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+

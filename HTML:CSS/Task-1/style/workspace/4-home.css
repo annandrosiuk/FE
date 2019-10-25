@@ -1,0 +1,94 @@
+.home {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.left-half-home,
+.right-half-home {
+  width: 50%;
+}
+
+.left-half-home {
+  background: url("../../img/ficus.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 70rem;
+}
+
+.home-photo {
+  z-index: 20;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 45rem;
+  left: 37%;
+  
+}
+
+.photo-download{
+  background-size: cover;
+  background-position: center center;
+  border: 2rem solid #fff;
+  max-height: 45rem;
+}
+
+.right-half-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-half-home .text-wrapper{
+    margin: 15rem 0 0 5rem;
+}
+.text-wrapper{
+    max-width: 25rem;
+    width: 100%;
+    height: 100%;
+}
+
+.text-wrapper .h2{
+    color: #000;
+    font-size: 3.4rem;
+    text-align: left;
+    font-family: "Old Standard TT";
+    margin-bottom: 2rem;
+}
+
+.italic{
+    font-style: italic;
+    font-family: "Old Standard TT";
+    letter-spacing: -0.1rem;
+}
+
+.text-wrapper .p{
+    font-size: 1.25rem;
+    color: #19191a;
+    font-family: "Old Standard TT";
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.text-wrapper .a{
+    color: #969696;
+    font-family: "Lato-Black";
+    text-transform: uppercase;
+    transition: ease-in-out .5s;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+.text-wrapper .underline{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ececec;
+}
+
+.text-wrapper .a:hover{
+  color: #000;
+  transition: ease-in-out .3s;
+}
