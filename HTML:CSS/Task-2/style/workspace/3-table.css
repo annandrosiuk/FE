@@ -1,0 +1,30 @@
+.table-section {
+  font-size: 2rem;
+  border: 1px dashed #000;
+  max-width: 40%;
+}
+
+.table,
+.table tr td,
+.table tr th {
+  border: 1px solid #000;
+}
+
+.table {
+  margin: 2rem;
+}
+
+.table tr th {
+  padding: 0.5rem 3rem;
+}
+
+.table tr td:first-child {
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.table tr td {
+  padding-left: 0.5rem;
+}
+.center {
+  text-align: center;
+}
