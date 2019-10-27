@@ -15,6 +15,18 @@
   margin-top: 1rem;
 }
 
+.square{
+  list-style: square;
+}
+
+.circle{
+  list-style: circle;
+}
+
+.none{
+  list-style: none;
+}
+
 .dicimal {
   list-style: decimal-leading-zero;
 }
