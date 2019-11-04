@@ -1,0 +1,51 @@
+.form-switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.switch-i {
+  position: relative;
+  margin-right: 1rem;
+  width: 4.6rem;
+  height: 2.6rem;
+  background-color: #e6e6e6;
+  border-radius: 2.3rem;
+  transition: all 0.3s linear;
+}
+.switch-i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4.2rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border-radius: 1.1rem;
+  transform: translate3d(0.2rem, 0.2rem, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+.switch-i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 .2rem .2rem rgba(0, 0, 0, 0.23);
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  transition: all 0.2s ease-in-out;
+}
+.form-switch input {
+  display: none;
+}
+.form-switch input:checked + .switch-i {
+  background-color: #4bd763;
+}
+.form-switch input:checked + .switch-i::before {
+  transform: translate3d(1.8rem, 0.2rem, 0) scale3d(0, 0, 0);
+}
+.form-switch input:checked + .switch-i::after {
+  transform: translate3d(2.2rem, 0.2rem, 0);
+}
