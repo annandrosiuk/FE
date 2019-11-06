@@ -1,0 +1,43 @@
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F0F0F0;
+}
+
+.price .h2{
+    margin: 10rem 0 0 0;
+}
+
+.price table{
+    margin: 5rem 0 1rem 0;
+    border: .1rem solid #000000;
+    font-family: "Lato";
+    font-size: 1.4rem;
+}
+
+.price table tr th,
+.price table tr td{
+    padding: 1rem;
+    border: .1rem solid #000000;
+}
+
+.price table tr th{
+    font-style: italic;
+    font-family: "Mukta_Mahee";
+}
+
+details{
+    margin-bottom: 10rem;
+}
+
+details p,
+details summary{
+    font-family: "Lato";
+    font-size: 1.4rem;
+}
+
+details summary{
+    color: #C1333A;
+}

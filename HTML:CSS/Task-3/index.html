@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TASK 3</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/main.js"></script>
+</head>
+
+<body>
+  <!-- --------------HEADER-------------- -->
+  <header class="header">
+    <nav class="menu left-menu">
+      <ul class="menu-ul">
+        <li><a class="menu-link" href="#home">Home</a></li>
+        <li><a class="menu-link" href="#about">About</a></li>
+        <li><a class="menu-link" href="https://github.com/annandrosiuk" target="_blank">Github</a></li>
+      </ul>
+    </nav>
+
+    <span class="logo">SERENA</span>
+
+    <nav class="menu right-menu">
+      <ul class="menu-ul">
+        <li><a class="menu-link" href="#price">Price</a></li>
+        <li><a class="menu-link" href="#blog">Blog</a></li>
+        <li><a class="menu-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- --------------END OF HEADER-------------- -->
+  <main>
+    <!-- --------------Section HOME-------------- -->
+    <section class="home" id="home">
+      <div class="left-half-home">
+        <div class="text-wrapper">
+          <h2 class="h2">Write a short pitch about <wbr>who you are</wbr> and what you do </h2>
+          <span class="btn"><a href="#contact">Contact me</a></span>
+          <time></time>
+        </div>
+      </div>
+      <div class="right-half-home"></div>
+    </section>
+    <!-- --------------END OF Section HOME-------------- -->
+    <!-- --------------Section ABOUT-------------- -->
+    <section class="about" id="about">
+      <article>
+        <div class="text-wrapper-about">
+          <h2 class="h2">Yoga studio</h2>
+          <p class="p">
+            "Follow your <mark>nature</mark>. The practice is really about uncovering your own pose;
+            we have great respect for our teachers, but unless we can uncover our own pose in the moment,
+            it's not practice — it's mimicry. Rest deeply in Savasana every day.
+            Always enter that pratyahara (withdrawn state) every day.
+            And just enjoy yourself. For many years I mistook discipline as ambition.
+            Now I believe it to be more about consistency. Do get on the mat.
+            Practice and life are not that different."
+          </p>
+          <span>— Judith Hanson Lasater</span>
+          <template>
+              <h2>Ficus</h2>
+              <img src="img/ficus.jpg" width="214" height="204">
+          </template>
+      </article>
+
+      <aside>
+        <div class="aside-block">
+          <h3>Lesson 1</h3>
+          <p>Lorem, ipsum <time datetime="2020-12-31 20:00">New Year</time> dolor sit amet consectetur adipisicing elit.
+            Commodi blanditiis nulla quod rem delectus, pariatur laboriosam
+            ipsam asperiores temporibus dolore veniam quam est similique!
+            Placeat quibusdam perspiciatis rerum vel delectus.
+          </p>
+        </div>
+        <div class="aside-block">
+          <figure>
+            <img src="img/about1.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+          </figure>
+        </div>
+      </aside>
+    </section>
+    <!-- --------------END OF Section ABOUT-------------- -->
+    <section class="price" id="price">
+      <h2 class="h2">Our Price</h2>
+      <table>
+        <tr>
+          <th>Pricing option</td>
+          <th>Price</th>
+          <th>1 class per week</th>
+          <th>2 classes per week</th>
+          <th>3 classes per week</th>
+          <th>Efficiency</th>
+        </tr>
+        <tr>
+          <td>Drop in</td>
+          <td>18$</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td><meter value="2" min="0" max="10">2 out of 10</meter></td>
+        </tr>
+        <tr>
+          <td>5 Class Pass</td>
+          <td>80$</td>
+          <td>16$</td>
+          <td>16$</td>
+          <td>16$</td>
+          <td><meter value="4" min="0" max="10">2 out of 10</meter></td>
+        </tr>
+        <tr>
+          <td>10 Class Pass</td>
+          <td>145$</td>
+          <td>14$</td>
+          <td>14$</td>
+          <td>14$</td>
+          <td><meter value="6" min="0" max="10">2 out of 10</meter></td>
+        </tr>
+        <tr>
+          <td>Limited Membership</td>
+          <td>65$</td>
+          <td>13$</td>
+          <td>13$</td>
+          <td>13$</td>
+          <td><meter value="8" min="0" max="10">2 out of 10</meter></td>
+        </tr>
+        <tr>
+          <td>Unimited Membership</td>
+          <td>90$</td>
+          <td>30$</td>
+          <td>11$</td>
+          <td>8$</td>
+          <td><meter value="10" min="0" max="10">2 out of 10</meter></td>
+        </tr>
+      </table>
+      <details>
+        <summary>*Additional info</summary>
+        <p>You need to check your doctor before first session</p>
+      </details>
+    </section>
+
+    <section class="add-info">
+      <h2 class="h2">Some additional info</h2>
+      <div class="media">
+        <div class="right-half video">
+          <video width="620" height="360" controls>
+            <source src="video/Yoga.mp4" type="video/mp4">
+            <source src="video/Yoga.mp4" type="video/ogg">
+            <track src="video/Yoga.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="left-half audio">
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="contact">
+        <h2 class="h2">Contact Us</h2>
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          </div>  
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+    </section>
+
+  </main>
+  <footer class="footer" id="footer">
+    <p class="p">© COPYRIGHT 2019 ANN’S WEBSITE. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+
+</html>
