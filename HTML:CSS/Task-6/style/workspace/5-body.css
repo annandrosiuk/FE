@@ -1,0 +1,60 @@
+.card-body {
+  padding: 2rem 0 4rem 2rem;
+}
+
+.card-body .text-block p {
+  text-transform: uppercase;
+}
+
+.new-block {
+  position: absolute;
+  background-color: #6ee370;
+  color: #ffffff;
+  top: -0.5rem;
+  right: 5.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  position: relative;
+  font-size: 1.2rem;
+  color: #acacab;
+  cursor: pointer;
+}
+
+.rating > label::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  opacity: 0;
+  color: #000000;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 0.8;
+}
+
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}

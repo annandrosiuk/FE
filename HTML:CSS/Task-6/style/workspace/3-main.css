@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #353535;
+}
+
+.bold {
+  font-weight: 900;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.mar-15 {
+  margin: 1.5rem 0;
+}
+
+.mar-bot5 {
+  margin-bottom: 0.5rem;
+}
+
+.mar-bot10 {
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-size: 1.1rem;
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 28rem;
+  border-radius: 2.5rem;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
