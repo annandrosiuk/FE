@@ -1,0 +1,92 @@
+body > header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #ececec;
+  padding: 2rem 0;
+}
+
+body > header h1,
+body > header nav h2 {
+  font-size: 2.4rem;
+  margin: 0 3rem;
+  font-family: "Monserrat";
+}
+
+body > header nav h2 {
+  position: relative;
+  padding: 0.2rem 2rem;
+  line-height: 5rem;
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+
+body > header nav h2:hover {
+  background: #e5ef64;
+  transition: ease-in-out 0.5s;
+}
+
+header nav h2:before {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 0.3rem solid transparent;
+  animation: rev-animate 1s linear forwards;
+}
+
+header nav h2:hover:before {
+  animation: animate 1s linear forwards;
+}
+
+header nav h2:after {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 0.3rem solid transparent;
+  animation: rev-animate2 1s linear forwards;
+}
+
+header nav h2:hover:after {
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s;
+}
+
+body > header ul {
+  position: absolute;
+  top: 7.8rem;
+  background: #e5ef64;
+  padding: 0 2rem;
+  height: 35rem;
+  overflow-y: scroll;
+  transform-origin: top center;
+  transform: scale(1, 0);
+  transition: transform 1.8s;
+}
+
+header nav ul li a:nth-child(2n) {
+  text-decoration: underline;
+}
+
+body > header ul a {
+  color: #262626;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+body > header ul:hover {
+  transform: scale(1, 1);
+}
+
+body > header h2:hover + ul {
+  transform: scale(1, 1);
+}
