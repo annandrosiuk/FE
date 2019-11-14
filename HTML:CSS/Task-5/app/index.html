@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/libs.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- --------------HEADER-------------- -->
+  <header class="header">
+    <nav class="menu left-menu">
+      <ul class="menu-ul">
+        <li><a href="#home">Home</a>
+
+          <ul class="menu_child">
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="#">Sub item 2 ></a>
+
+              <ul class="menu_child">
+                <li><a href="https://github.com" target="_blank">Github</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+                <li><a href="#">Sub item 4</a></li>
+                <li><a href="#">Sub item 5</a></li>
+                <li><a href="#">Sub item 6</a></li>
+                <li><a href="#">Sub item 7</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#">Sub item 3</a></li>
+            <li><a href="#">Sub item 4</a></li>
+            <li><a href="#">Sub item 5</a></li>
+            <li><a href="#">Sub item 6</a></li>
+            <li><a href="#">Sub item 7</a></li>
+          </ul>
+
+        </li>
+        <li><a href="#about">About</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/annandrosiuk" target="_blank">Github</a>
+        </li>
+      </ul>
+    </nav>
+
+    <span class="logo">SERENA</span>
+
+    <nav class="menu right-menu">
+      <ul class="menu-ul">
+        <li><a href="#price">Price</a></li>
+        <li><a href="#blog">Blog</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- --------------END OF HEADER-------------- -->
+  <main>
+    <!-- --------------Section HOME-------------- -->
+    <section class="home" id="home">
+      <div class="left-half-home">
+        <div class="text-wrapper">
+          <h2 class="h1">Write a short pitch about <wbr>who you are</wbr> and what you do </h2>
+          <span class="btn"><a href="#contact">Contact me</a></span>
+          <time></time>
+        </div>
+      </div>
+      <div class="right-half-home"></div>
+    </section>
+    <!-- --------------END OF Section HOME-------------- -->
+    <!-- --------------Section ABOUT-------------- -->
+    <section class="about" id="about">
+
+      <!-- <div class="row">
+        <div class="small-12 columns">
+          <div class="info-slider spline">
+            <h5 class="section-heading text-center">CSS Only Slider</h5>
+            <input id="info-slide-1" type="radio" name="slider" checked>
+            <div class="slide">
+              <div class="slide-inner">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. Question 1</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      eget lorem blandit, egestas lorem in, malesuada lacus. Suspendisse sem odio, commodo ut purus sit
+                      amet, tincidunt consequat augue. Phasellus
+                      in malesuada justo. Integer bibendum arcu sem, vel mattis nisl luctus sit amet.
+                    </p>
+                  </div>
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. Question 2</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      eget lorem blandit, egestas lorem in, malesuada lacus. Suspendisse sem odio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <label class="prev-slide" for="info-slide-3"><i class="fa fa-chevron-left"></i></label>
+              <label class="next-slide" for="info-slide-2"><i class="fa fa-chevron-right"></i></label>
+            </div>
+
+            <input id="info-slide-2" type="radio" name="slider">
+            <div class="slide">
+              <div class="slide-inner">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. This is slide 2</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      eget lorem blandit, egestas lorem in, malesuada lacus.
+                    </p>
+                  </div>
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. This is slide 2</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      eget lorem blandit, egestas lorem in, malesuada lacus. Suspendisse sem odio, commodo ut purus sit
+                      amet, tincidunt consequat augue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <label class="prev-slide" for="info-slide-1"><i class="fa fa-chevron-left"></i></label>
+              <label class="next-slide" for="info-slide-3"><i class="fa fa-chevron-right"></i></label>
+            </div>
+
+            <input id="info-slide-3" type="radio" name="slider">
+            <div class="slide">
+              <div class="slide-inner">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. This is slide 3</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="large-6 columns">
+                    <span class="question bold">Q. This is slide 3</span>
+                    <p><span class="bold">A.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      eget lorem blandit, egestas lorem in, malesuada lacus. Suspendisse sem odio, commodo ut purus sit
+                      amet, tincidunt consequat augue. Phasellus
+                      in malesuada justo. Integer bibendum arcu sem, vel mattis nisl luctus sit amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <label class="prev-slide" for="info-slide-2"><i class="fa fa-chevron-left"></i></label>
+              <label class="next-slide" for="info-slide-1"><i class="fa fa-chevron-right"></i></label>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+    <!-- --------------END OF Section ABOUT-------------- -->
+    <section class="price" id="price">
+      <h2 class="h2">Why you should choose us</h2>
+      <div class="card-block">
+        <div class="card">
+          <div class="circle"></div>
+          <h3 class="h3"></h3>
+          <p class="p"></p>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </section>
+
+    <section class="add-info">
+      <h2 class="h2">Some additional info</h2>
+
+    </section>
+
+    <section class="form" id="contact">
+      <h2 class="h2">Contact Us</h2>
+      <form class="cf">
+        <div class="half left cf">
+          <input type="text" id="input-name" placeholder="Name">
+          <input type="email" id="input-email" placeholder="Email address">
+          <input type="text" id="input-subject" placeholder="Subject">
+        </div>
+        <div class="half right cf">
+          <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" value="Submit" id="input-submit">
+      </form>
+    </section>
+
+  </main>
+  <footer class="footer" id="footer">
+    <p class="p">© COPYRIGHT 2019 ANN’S WEBSITE. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+
+  .h2 {
+    margin: 10rem 0 0 0;
+  }
+}

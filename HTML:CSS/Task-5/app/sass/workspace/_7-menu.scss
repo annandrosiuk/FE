@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  @include dis-flex;
+  padding-top: 4.5rem;
+  z-index: 20;
+  position: absolute;
+  font-family: "Mukta_Mahee";
+}
+
+.menu-ul {
+  display: flex;
+
+  li {
+    margin: 0 1.5rem;
+    position: relative;
+
+    a {
+      text-transform: uppercase;
+      font-size: $f12;
+      color: $dark-grey;
+      line-height: 1.4;
+      letter-spacing: 0.2rem;
+      font-weight: 800;
+      transition: ease-in-out 0.3s;
+      display: block;
+      padding: 0.8rem 1.2rem;
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      background: $light-grey;
+
+      > .menu_child {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: $f58;
+  color: $dark-grey;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+
+.menu_child {
+  position: absolute;
+  transform-origin: top center;
+  transform: scale(1, 0);
+  transition: transform 0.3s;
+  background: $light-grey;
+
+  ul {
+    top: 0;
+    left: 100%;
+  }
+}

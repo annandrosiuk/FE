@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  position: relative;
+  background-color: $peach;
+}
+
+.left-half-home,
+.right-half-home {
+  width: 50%;
+}
+
+.right-half-home {
+  background: url("../../img/ficus.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 80rem;
+}
+
+.left-half-home {
+  @include dis-flex;
+
+  .text-wrapper {
+    @include dis-flex;
+    flex-direction: column;
+    width: 70%;
+
+    .h1 {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.btn {
+  border: 0.2rem solid $black;
+  padding: 2rem 4rem;
+  font-size: $f15;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  transition: ease-in-out 0.3s;
+
+  a {
+    color: $dark-grey;
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 0.2rem solid $white;
+    transition: ease-in-out 0.3s;
+  }
+}
