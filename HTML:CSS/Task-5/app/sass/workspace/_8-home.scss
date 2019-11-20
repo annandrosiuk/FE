@@ -23,6 +23,7 @@
     @include dis-flex;
     flex-direction: column;
     width: 70%;
+    animation: scale-up-center 2s linear forwards;
 
     .h1 {
       margin-bottom: 5rem;
@@ -32,7 +33,6 @@
 
 .btn {
   border: 0.2rem solid $black;
-  padding: 2rem 4rem;
   font-size: $f15;
   cursor: pointer;
   text-transform: uppercase;
@@ -41,6 +41,8 @@
 
   a {
     color: $dark-grey;
+    display: block;
+    padding: 2.5rem 6rem;
   }
 
   &:hover {

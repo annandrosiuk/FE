@@ -1,12 +1,5 @@
 .form {
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form .h2 {
-  margin: 10rem 0 5rem 0;
+  @include dis-flex;
 }
 
 form {

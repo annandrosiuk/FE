@@ -2,19 +2,30 @@
 
 .h1 {
   color: $white;
-  font-size: $f45;
+  font-size: $f26;
   text-align: center;
   font-family: $mm;
 }
 
-.h2 {
+h2 {
   color: $dark-grey;
   font-size: $f45;
   text-align: center;
   font-family: $mm;
 }
 
-.p {
+h3 {
+  color: $dark-grey;
+  font-size: $f24;
+  text-align: center;
+  font-family: $mm;
+}
+
+h4{
+  font-size: $f18;
+}
+
+p {
   font-size: $f18;
   color: $dark-grey;
   font-family: $lt;

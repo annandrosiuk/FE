@@ -1,0 +1,38 @@
+.contacts {
+  @include dis-flex;
+  background-color: #f0f0f0;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div {
+  ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+      font-size: $f18;
+      color: $dark-grey;
+      font-family: $lt;
+
+      &:hover {
+        color: $red;
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+
+  .lnr {
+    width: 3rem;
+    height: 3rem;
+    fill: currentColor;
+    transition: ease-in-out 0.3s;
+    margin: 1rem;
+  }
+}

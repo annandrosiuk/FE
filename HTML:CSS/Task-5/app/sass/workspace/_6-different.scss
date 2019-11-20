@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  @include dis-flex;
+  flex-direction: column;
+}
+
+.mar-10{
+  margin: 10rem 0;
+}
+
+.mar-2{
+  margin: 2rem 0;
+}
