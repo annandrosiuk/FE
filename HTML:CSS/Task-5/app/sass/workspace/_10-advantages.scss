@@ -52,3 +52,37 @@
     text-align: justify;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .card {
+    .circle {
+      width: 16rem;
+      height: 16rem;
+
+      & .lnr {
+        width: 8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .cards {
+    justify-content: center;
+    margin: 10rem 0 0 0;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 0 0 5rem 0;
+
+    .circle {
+      width: 10rem;
+      height: 10rem;
+
+      & .lnr {
+        width: 6rem;
+      }
+    }
+  }
+}

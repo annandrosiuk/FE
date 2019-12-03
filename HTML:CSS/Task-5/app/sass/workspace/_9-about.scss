@@ -51,7 +51,7 @@
     top: 0;
     font-size: 1rem;
     opacity: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     color: $white;
     transition: 450ms opacity;
   }
@@ -68,5 +68,21 @@
 
   &:hover ~ .tile {
     transform: translate3d(12.5rem, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .row__inner {
+    margin: 8rem 0;
+  }
+
+  .tile {
+    width: 20rem;
+    height: 26rem;
+
+    &__img {
+      width: 20rem;
+      height: 26rem;
+    }
   }
 }

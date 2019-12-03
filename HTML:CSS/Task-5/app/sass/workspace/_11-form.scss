@@ -1,80 +1,74 @@
 .form {
   @include dis-flex;
+  font-size: $f18;
 }
 
-form {
-  max-width: 80%;
-  text-align: center;
-  margin-bottom: 10rem;
+.registration {
+  position: relative;
+  border-radius: 0.8rem;
+  padding: 1.6rem 4.8rem;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-form input,
-form textarea {
-  border: 0;
-  outline: 0;
-  padding: 1em;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  display: block;
-  width: 100%;
-  margin-top: 1em;
-  font-family: "Merriweather", sans-serif;
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  resize: none;
-}
-form input:focus,
-form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #e74c3c !important;
-  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
-  box-shadow: 0 0px 2px #e74c3c !important;
-}
-form #input-submit {
-  color: white;
-  background: #e74c3c;
-  cursor: pointer;
-}
-form #input-submit:hover {
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-}
-form textarea {
-  height: 126px;
-}
+.registration-input,
+.registration-btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 24rem;
+  overflow: hidden;
+  border-style: groove;
+  opacity: 0.5;
+  font-family: $lt;
+  font-weight: 400;
+  font-size: $f18;
+  margin: 0.5rem;
+  transition: ease-in-out 0.3s;
 
-.half {
-  float: left;
-  width: 48%;
-  margin-bottom: 1em;
-}
-
-.right {
-  width: 15rem;
-}
-
-.left {
-  margin-right: 5rem;
-}
-
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
+  &:focus {
+    outline: none;
+    opacity: 0.7;
   }
 }
-/* Clearfix */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+
+.registration-input {
+  display: flex;
+  flex-direction: column;
 }
 
-.cf:after {
-  clear: both;
+.registration-btn {
+  background-color: $red;
+  border-color: $red;
+  color: $white;
+
+  &:hover {
+    outline: none;
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.registration > label {
+  display: block;
+  margin: 2.4rem 0;
+
+  span {
+    font-size: $f18;
+    color: $dark-grey;
+    font-family: $lt;
+  }
+}
+
+a {
+  color: $red;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+  .registration {
+    width: 90%;
+    padding: 1rem;
+  }
 }

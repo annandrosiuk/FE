@@ -52,6 +52,23 @@
   animation: text 3s linear forwards;
 }
 
+// BURGER MENU
+
+nav label {
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+nav label,
+nav input {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+//END
+
 .menu_child {
   position: absolute;
   transform-origin: top center;
@@ -61,6 +78,61 @@
 
   ul {
     top: 0;
-    left: 100%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .header {
+    justify-content: space-between;
+  }
+  .menu-ul {
+    width: 30%;
+  }
+  .menu-ul {
+    position: absolute;
+    background-color: $light-grey;
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+
+  .menuToggle:checked + .menu-ul {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    transform: scale(1, 1);
+  }
+  nav label,
+  .hidden {
+    display: block;
+  }
+  label .lnr {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .menu-ul li:hover > .menu_child {
+    position: relative;
+    transition: transform 0.9s;
+  }
+
+  .logo {
+    margin: 0 9rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    font-size: $f40;
+    margin: 0 3rem 0 0;
+  }
+
+  .menu-ul {
+    width: 70%;
+  }
+
+  label .lnr {
+    width: 5rem;
+    height: 5rem;
   }
 }

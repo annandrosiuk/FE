@@ -18,9 +18,16 @@
   <!-- --------------HEADER-------------- -->
   <header class="header">
     <nav class="menu left-menu">
+
+      <label for="menu">
+        <svg class="lnr lnr-menu">
+          <use xlink:href="#lnr-menu"></use>
+        </svg>
+      </label>
+      <input class="menuToggle" type="checkbox" id="menu">
+
       <ul class="menu-ul">
         <li><a href="#home">Home</a>
-
           <ul class="menu_child">
             <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
             <li><a href="#">Sub item 2 ></a>
@@ -60,10 +67,33 @@
         </li>
         <li><a href="https://github.com/annandrosiuk" target="_blank">Github</a>
         </li>
+        <li class="hidden"><a href="#price">Price</a></li>
+        <li class="hidden"><a href="#blog">Blog</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li class="hidden"><a href="#contact">Contact</a></li>
       </ul>
+
     </nav>
 
     <span class="logo">SERENA</span>
+
+    <!-- <div class="burger-menu">
+      <svg class="lnr lnr-menu">
+        <use xlink:href="#lnr-menu"></use>
+      </svg>
+    </div> -->
 
     <nav class="menu right-menu">
       <ul class="menu-ul">
@@ -326,17 +356,32 @@
         <h2 class="h2">Contact Us</h2>
         <p class="italic">Don't wait, send a message!</p>
 
-        <form class="cf">
-          <div class="half left cf">
-            <input type="text" id="input-name" placeholder="Name">
-            <input type="email" id="input-email" placeholder="Email address">
-            <input type="text" id="input-subject" placeholder="Subject">
-          </div>
-          <div class="half right cf">
-            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-          </div>
-          <input type="submit" value="Submit" id="input-submit">
+        <form class="registration mar-10" method="post">
+
+          <input class="registration-input" placeholder="Username" required></input>
+          <input class="registration-input" placeholder="Password" type="password" required></input>
+          <input class="registration-input" placeholder="Email" type="email" required></input>
+
+          <label class="registration-radio">
+            <input type="radio" name="type" required>
+            <span>Personal Account</span>
+          </label>
+
+          <label class="registration-radio">
+            <input type="radio" name="type" required>
+            <span>Business Account</span>
+          </label>
+
+          <label class="registration-checkbox">
+            <input type="checkbox" required>
+            <span>I agree to the <a href="https://codepen.io/collection/nZKBZe/" target="_blank"
+                title="Actually not a Terms of Service">Terms of Service</a></span>
+          </label>
+
+          <input type="submit" class="registration-btn" value="Sign Up"></input>
+
         </form>
+
       </div>
     </section>
 
@@ -346,7 +391,7 @@
         <p class="italic">Here you can find us!</p>
 
         <div class="map mar-10">
-          <iframe width="500" height="300"
+          <iframe
             src="https://maps.google.com/maps?width=720&height=300&hl=ru&q=3%D0%9A3%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%9D%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%2C%20%D0%9A%D0%B8%D1%97%D0%B2%2C%2004210+(SERENA)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
@@ -354,22 +399,27 @@
           <div class="div">
             <ul>
               <li>
-                <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+                <svg class="lnr lnr-phone-handset">
+                  <use xlink:href="#lnr-phone-handset"></use>
+                </svg>
                 <a href="tel:1-562-867-5309">1-562-867-5309</a>
               </li>
               <li>
-                <svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg>
+                <svg class="lnr lnr-user">
+                  <use xlink:href="#lnr-user"></use>
+                </svg>
                 <a href="mailto:someone@yoursite.com">Mail us</a>
               </li>
               <li>
-                <svg class="lnr lnr-earth"><use xlink:href="#lnr-earth"></use></svg>
+                <svg class="lnr lnr-earth">
+                  <use xlink:href="#lnr-earth"></use>
+                </svg>
                 <a href="https://facebook.com" target="_blank">Facebook</a>
               </li>
             </ul>
-              
+
           </div>
         </div>
-
 
       </div>
     </section>

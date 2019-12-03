@@ -8,22 +8,32 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  iframe {
+    width: 50rem;
+    height: 30rem;
+  }
 }
 
 .div {
-  ul li {
+  ul {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
 
-    a {
-      font-size: $f18;
-      color: $dark-grey;
-      font-family: $lt;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 
-      &:hover {
-        color: $red;
-        transition: ease-in-out 0.3s;
+      a {
+        font-size: $f18;
+        color: $dark-grey;
+        font-family: $lt;
+
+        &:hover {
+          color: $red;
+          transition: ease-in-out 0.3s;
+        }
       }
     }
   }
@@ -34,5 +44,33 @@
     fill: currentColor;
     transition: ease-in-out 0.3s;
     margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .map {
+    flex-direction: column;
+
+    iframe {
+      width: 90%;
+      height: 30rem;
+    }
+  }
+
+  .div ul {
+    flex-direction: row;
+    margin: 2rem 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin: 0 0.8rem 1rem 0;
+    }
+
+    .lnr {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
+    }
   }
 }
