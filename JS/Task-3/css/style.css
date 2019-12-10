@@ -1,0 +1,46 @@
+body {
+  margin: 10px;
+  background-color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+#userGuess {
+  height: 30px;
+  width: 10%;
+  border: 0.125rem solid #222;
+  border-radius: 8px;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#userGuess:focus {
+  outline-width: 0;
+}
+
+.button {
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#historyArea {
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+#game {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #cccccc;
+  padding: 10px;
+}
+
+#statusArea {
+  font-size: 18px;
+}
