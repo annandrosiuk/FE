@@ -1,0 +1,150 @@
+@font-face {
+	font-family: "Monserrat";
+	src: url("../font/Montserrat-Medium/Montserrat-Medium.eot") format("opentype"),
+	  url("../font/Montserrat-Medium/Montserrat-Medium.woff") format("woff"),
+	  url("../font/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Lato";
+	src: url("../font/Lato/Lato-Black.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Old-Standart";
+	src: url("../font/Old_Standard_TT/OldStandard-Regular.ttf") format("opentype"),
+	  url("../font/Old_Standard_TT/OldStandard-Regular.woff") format("woff"),
+	  url("../font/Old_Standard_TT/OldStandard-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Monserrat';
+  color: #333333;
+}
+
+header ul,
+header ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 30px ;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+header ul li:hover {
+  text-decoration: none;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user {
+  border: 3px dashed gray;
+  max-width: 250px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.post {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 20%;
+  background: #c7be95;
+  cursor: pointer;
+}
+
+.post h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.post p{
+	font-family: 'Old-Standart';
+	font-size: 18px;
+}
+
+main button {
+  width: 240px;
+  height: 80px;
+  margin: 20px auto;
+  cursor: pointer;
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 3px dashed #333333;
+  transition: all 0.4s ease 0s;
+}
+
+main button:hover{
+	background: #ef4a47;
+	border: none;
+	color: #ffffff;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+} 
+
+.comments {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.comments .comment {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.comments .comment:first-child {
+  border-top: 1px solid black;
+}
+
+.comments .comment .comment-email {
+  width: 100%;
+  text-align: right;
+  font-family: "FreeMono", monospace;
+}
+
+.comments .comment .comment-name {
+  padding: 10px 0;
+  font-family: Arial Narrow, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
