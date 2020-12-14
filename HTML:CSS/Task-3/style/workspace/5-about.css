@@ -1,0 +1,73 @@
+.about {
+  display: flex;
+  position: relative;
+  font-family: "Lato";
+}
+article{
+  min-width: 70%;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper-about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+.h2{
+  font-size: 3.3rem;
+  color: #333333;
+  font-family: "Mukta_Mahee";
+}
+
+.text-wrapper-about p{
+  font-size: 1.8rem;
+  margin: 4rem 0;
+}
+
+.text-wrapper-about span{
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+aside{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.aside-block{
+  border: .1rem dashed #333333;
+  margin: 4rem 0;
+  width: 80%;
+}
+
+.aside-block h3{
+  font-family: "Mukta_Mahee";
+  font-size: 2rem;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.aside-block p{
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 1rem;
+}
+
+figcaption{
+  font-size: 1.4rem;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.btn a{
+  color: #333333;
+}

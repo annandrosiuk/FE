@@ -1,0 +1,42 @@
+//typography
+
+.h1 {
+  color: $white;
+  font-size: $f36;
+  text-align: center;
+  font-family: $mm;
+}
+
+h2 {
+  color: $dark-grey;
+  font-size: $f45;
+  text-align: center;
+  font-family: $mm;
+}
+
+h3 {
+  color: $dark-grey;
+  font-size: $f24;
+  text-align: center;
+  font-family: $mm;
+}
+
+h4{
+  font-size: $f18;
+}
+
+p {
+  font-size: $f18;
+  color: $dark-grey;
+  font-family: $lt;
+}
+
+.bold {
+  font-weight: bold;
+  color: $black;
+}
+
+.italic {
+  font-style: italic;
+  letter-spacing: -0.1rem;
+}

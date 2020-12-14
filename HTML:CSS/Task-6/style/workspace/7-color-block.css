@@ -1,0 +1,79 @@
+.color-block {
+  position: relative;
+}
+
+.radio-block {
+  display: flex;
+}
+
+.radio-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-button input[type="radio"]:checked + .custom-radio,
+.radio-button .custom-radio:hover {
+  border: 0.2rem solid #f35e3d;
+  transition: all 0.3s ease;
+}
+
+.radio-button input[type="radio"]:checked + .custom-radio.green,
+.radio-button .custom-radio.green:hover {
+  border: 0.2rem solid #11e95b;
+}
+
+.radio-button input[type="radio"]:checked + .custom-radio.yellow,
+.radio-button .custom-radio.yellow:hover {
+  border: 0.2rem solid #ffd414;
+}
+
+.radio-button .custom-radio {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ffffff;
+  margin-right: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.radio-button .custom-radio::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #f35e3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -0.8rem;
+  margin-top: -0.8rem;
+}
+
+.radio-button .custom-radio.yellow::before {
+  background: #ffd414;
+}
+
+.radio-button .custom-radio.green::before {
+  background: #11e95b;
+}
+
+.price-block {
+  position: absolute;
+  width: 17rem;
+  background: #11e95b;
+  padding: 0.7rem 2rem;
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+  top: 2rem;
+  left: 10.5rem;
+}

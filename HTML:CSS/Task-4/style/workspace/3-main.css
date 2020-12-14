@@ -1,0 +1,14 @@
+body {
+  font-size: 1.4rem;
+  font-family: "Open-Sans", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.mar-top {
+  margin-top: 7rem;
+}

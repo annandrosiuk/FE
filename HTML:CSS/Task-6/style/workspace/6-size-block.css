@@ -1,0 +1,31 @@
+.size-block {
+  width: 75%;
+}
+
+.size-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.size-list li a {
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 100%;
+  color: #000000;
+  text-align: center;
+  line-height: 24px;
+  transition: all 0.3s ease-in;
+}
+
+.size-list li a:hover {
+  background-color: #e0675a;
+  color: #ffffff;
+}
+
+.size-list li .active {
+  background-color: #e0675a;
+  color: #ffffff;
+}

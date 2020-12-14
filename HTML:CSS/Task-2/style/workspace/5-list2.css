@@ -1,0 +1,32 @@
+.second-list {
+  width: 50%;
+  border: 1px dashed #000;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-list .h3 {
+  margin-bottom: 2rem;
+}
+
+.lists ul,
+.lists ol {
+  margin-top: 1rem;
+}
+
+.square{
+  list-style: square;
+}
+
+.circle{
+  list-style: circle;
+}
+
+.none{
+  list-style: none;
+}
+
+.dicimal {
+  list-style: decimal-leading-zero;
+}

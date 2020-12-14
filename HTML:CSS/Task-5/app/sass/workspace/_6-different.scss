@@ -1,0 +1,25 @@
+.container {
+  width: 80%;
+  @include dis-flex;
+  flex-direction: column;
+}
+
+.mar-10 {
+  margin: 10rem 0;
+}
+
+.mar-2 {
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .mar-10 {
+    margin: 5rem 0;
+  }
+}

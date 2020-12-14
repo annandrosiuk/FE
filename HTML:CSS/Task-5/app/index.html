@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- --------------HEADER-------------- -->
+  <header class="header">
+    <nav class="menu left-menu">
+
+      <label for="menu">
+        <svg class="lnr lnr-menu">
+          <use xlink:href="#lnr-menu"></use>
+        </svg>
+      </label>
+      <input class="menuToggle" type="checkbox" id="menu">
+
+      <ul class="menu-ul">
+        <li><a href="#home">Home</a>
+          <ul class="menu_child">
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="#">Sub item 2 ></a>
+
+              <ul class="menu_child">
+                <li><a href="https://github.com" target="_blank">Github</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+                <li><a href="#">Sub item 4</a></li>
+                <li><a href="#">Sub item 5</a></li>
+                <li><a href="#">Sub item 6</a></li>
+                <li><a href="#">Sub item 7</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#">Sub item 3</a></li>
+            <li><a href="#">Sub item 4</a></li>
+            <li><a href="#">Sub item 5</a></li>
+            <li><a href="#">Sub item 6</a></li>
+            <li><a href="#">Sub item 7</a></li>
+          </ul>
+
+        </li>
+        <li><a href="#about">About</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/annandrosiuk" target="_blank">Github</a>
+        </li>
+        <li class="hidden"><a href="#price">Price</a></li>
+        <li class="hidden"><a href="#blog">Blog</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li class="hidden"><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+
+    <span class="logo">SERENA</span>
+
+    <!-- <div class="burger-menu">
+      <svg class="lnr lnr-menu">
+        <use xlink:href="#lnr-menu"></use>
+      </svg>
+    </div> -->
+
+    <nav class="menu right-menu">
+      <ul class="menu-ul">
+        <li><a href="#price">Price</a></li>
+        <li><a href="#blog">Blog</a>
+          <ul class="menu_child">
+            <li><a href="#">Sub item 1</a></li>
+            <li><a href="#">Sub item 2</a></li>
+            <li><a href="#">Sub item 3 ></a>
+              <ul class="menu_child">
+                <li><a href="#">Sub item 1</a></li>
+                <li><a href="#">Sub item 2</a></li>
+                <li><a href="#">Sub item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub item 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- --------------END OF HEADER-------------- -->
+  <main>
+    <!-- --------------Section HOME-------------- -->
+    <section class="home" id="home">
+      <div class="left-half-home">
+        <div class="text-wrapper">
+          <h2 class="h1">Software development is hard. Managing projects is hard.
+            Working remotely is hard. But we can handle it together! </h2>
+          <span class="btn"><a href="#contact">Contact us</a></span>
+          <time></time>
+        </div>
+      </div>
+      <div class="right-half-home"></div>
+    </section>
+    <!-- --------------END OF Section HOME-------------- -->
+    <!-- --------------Section ABOUT-------------- -->
+    <section class="about" id="about">
+      <div class="container mar-10">
+
+        <h2 class="h2">Our team</h2>
+        <p class="italic">Please, look at everyone, they deserve it!</p>
+
+        <div class="row">
+          <div class="row__inner">
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider1.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Kate Ivanova</h4>
+                  <p>Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider2.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider5.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider4.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider3.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider6.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider7.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider8.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider9.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="img/slider10.jpeg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  <h4>Name Surname</h4>
+                  <p>Position</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- --------------END OF Section ABOUT-------------- -->
+    <section class="advantages" id="price">
+      <div class="container mar-10">
+        <h2 class="h2">Why you should choose us</h2>
+        <p class="italic">Please, look at everyone, they deserve it!</p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-magic-wand">
+                <use xlink:href="#lnr-magic-wand"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Best design</h3>
+            <p>
+              Our approach to website design is to create a website that strengthens your company’s
+              brand while ensuring ease of use and simplicity for your audience.
+              We value simple content structure, clean design patterns, and thoughtful interactions.
+            </p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-laptop-phone">
+                <use xlink:href="#lnr-laptop-phone"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Last technologies</h3>
+            <p>
+              Front End Development is building out the visual components of a website. Using HTML, CSS ,
+              and Javascript, we build fast, interactive websites. This also may include integrating a CMS.
+            </p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-rocket">
+                <use xlink:href="#lnr-rocket"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Professionalism</h3>
+            <p>We can explain things clearly, communicate problems quickly and write accurately and concisely.
+              And we can self-manage, work to deadlines, organise projects and present well-structured and complete
+              deliverables.
+            </p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-cog">
+                <use xlink:href="#lnr-cog"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Problem Solving</h3>
+            <p>We can take vague problems and requirements and break them down into steps and solutions.
+              Also good at thinking abstractly and putting together systems with many moving parts.
+            </p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-star">
+                <use xlink:href="#lnr-star"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Performance</h3>
+            <p>Having a fast website is key to keeping people around which ultimately converts them into customers.
+              There are a myriad of techniques involved in making a fast website, all of which we've spent years
+              learning.
+            </p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <svg class="lnr lnr-diamond">
+                <use xlink:href="#lnr-diamond" class="use"></use>
+              </svg>
+            </div>
+            <h3 class="mar-2">Application UI</h3>
+            <p>The user interface of an application, whether it's mobile or desktop, can make or break a business.
+              Getting the interface right and most importantly of all, making it easy to navigate, are the keys
+              to a successful app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="contact">
+      <div class="container mar-10">
+        <h2 class="h2">Contact Us</h2>
+        <p class="italic">Don't wait, send a message!</p>
+
+        <form class="registration mar-10" method="post">
+
+          <input class="registration-input" placeholder="Username" required></input>
+          <input class="registration-input" placeholder="Password" type="password" required></input>
+          <input class="registration-input" placeholder="Email" type="email" required></input>
+
+          <label class="registration-radio">
+            <input type="radio" name="type" required>
+            <span>Personal Account</span>
+          </label>
+
+          <label class="registration-radio">
+            <input type="radio" name="type" required>
+            <span>Business Account</span>
+          </label>
+
+          <label class="registration-checkbox">
+            <input type="checkbox" required>
+            <span>I agree to the <a href="https://codepen.io/collection/nZKBZe/" target="_blank"
+                title="Actually not a Terms of Service">Terms of Service</a></span>
+          </label>
+
+          <input type="submit" class="registration-btn" value="Sign Up"></input>
+
+        </form>
+
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container mar-10">
+        <h2 class="h2">Contacts</h2>
+        <p class="italic">Here you can find us!</p>
+
+        <div class="map mar-10">
+          <iframe
+            src="https://maps.google.com/maps?width=720&height=300&hl=ru&q=3%D0%9A3%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%9D%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%2C%20%D0%9A%D0%B8%D1%97%D0%B2%2C%2004210+(SERENA)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+
+          <div class="div">
+            <ul>
+              <li>
+                <svg class="lnr lnr-phone-handset">
+                  <use xlink:href="#lnr-phone-handset"></use>
+                </svg>
+                <a href="tel:1-562-867-5309">1-562-867-5309</a>
+              </li>
+              <li>
+                <svg class="lnr lnr-user">
+                  <use xlink:href="#lnr-user"></use>
+                </svg>
+                <a href="mailto:someone@yoursite.com">Mail us</a>
+              </li>
+              <li>
+                <svg class="lnr lnr-earth">
+                  <use xlink:href="#lnr-earth"></use>
+                </svg>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <p class="p">© COPYRIGHT 2019 <a href="https://facebook.com" target="_blank">ANN’S WEBSITE</a>. ALL RIGHTS RESERVED.
+    </p>
+  </footer>
+</body>
+
+
+</html>

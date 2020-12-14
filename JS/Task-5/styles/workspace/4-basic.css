@@ -1,0 +1,14 @@
+body {
+  font-family: "Old-Standart";
+  color: #262626;
+  font-size: 1.4rem;
+}
+
+a {
+  color: #6e64ef;
+}
+
+abbr {
+  color: #000000;
+  font-weight: 900;
+}

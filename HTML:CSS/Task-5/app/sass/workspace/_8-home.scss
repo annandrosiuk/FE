@@ -1,0 +1,104 @@
+.home {
+  display: flex;
+  position: relative;
+  background-color: $peach;
+}
+
+.left-half-home,
+.right-half-home {
+  width: 50%;
+}
+
+.right-half-home {
+  background: url("../img/ficus.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 80rem;
+}
+
+.left-half-home {
+  @include dis-flex;
+
+  .text-wrapper {
+    @include dis-flex;
+    flex-direction: column;
+    width: 70%;
+    animation: scale-up-center 2s linear forwards;
+
+    .h1 {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.btn {
+  border: 0.2rem solid $black;
+  font-size: $f15;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  transition: ease-in-out 0.3s;
+
+  a {
+    color: $dark-grey;
+    display: block;
+    padding: 2.5rem 6rem;
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 0.2rem solid $white;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .h1 {
+    font-size: $f24;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .home {
+    height: 75rem;
+  }
+
+  .left-half-home .text-wrapper .h1 {
+    font-size: $f24;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 10rem;
+  }
+
+  .left-half-home {
+    width: 100%;
+    background: url("../img/ficus.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .right-half-home {
+    width: 0%;
+    height: 0;
+  }
+
+  .btn {
+    background: $white;
+
+    &:hover {
+      background-color: rgba($color: $dark-grey, $alpha: 0.7);
+    }
+
+    &:hover a {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+  .home {
+    height: 65rem;
+  }
+  .left-half-home .text-wrapper .h1 {
+    font-size: $f20;
+  }
+}
